@@ -1,0 +1,380 @@
+:root {
+  --pastel-green: #cfe8d9;
+  --pastel-blue: #cfe5f3;
+  --primary-text: #1d3557;
+  --secondary-text: #457b9d;
+  --highlight: #2a9d8f;
+  --background: #f6fefb;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--primary-text);
+}
+
+.packages-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.packages-hero {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.packages-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.packages-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.packages-hero p {
+  font-size: 1.2rem;
+}
+
+.services {
+  padding: 4rem 2rem;
+  background-color: var(--pastel-green);
+  width: 100%;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.service-block {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-block h3 {
+  font-size: 1.4rem;
+  color: var(--highlight);
+  margin-bottom: 1rem;
+}
+
+.service-block ul {
+  list-style: none;
+  padding-left: 1rem;
+  line-height: 1.8;
+  color: var(--secondary-text);
+}
+
+.service-block li::before {
+  content: "✔️ ";
+  margin-right: 0.5rem;
+}
+
+.step-section {
+  background-color: var(--pastel-blue);
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.step-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+}
+
+.step {
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-left: 6px solid var(--highlight);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.step p, .step ul {
+  color: var(--secondary-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.step ul {
+  padding-left: 1.2rem;
+}
+
+.step ul li::marker {
+  color: var(--highlight);
+}
+
+.whatsapp-cta {
+  background-color: var(--highlight);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  width: 100%;
+}
+
+.whatsapp-cta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.whatsapp-btn {
+  background-color: white;
+  color: var(--highlight);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #f0fdfa;
+}
+.how-it-works {
+  padding: 60px 20px;
+  background-color: #f0fdfa; /* Soft pastel mint */
+  color: #004d61;
+  text-align: center;
+}
+
+.how-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #004d61;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background-color: #ffffff;
+  border: 2px solid #cce5e1;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 77, 97, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  border-color: #9edbd1;
+}
+
+.step-card h3 {
+  color: #007a7a;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.step-card ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #333;
+}
+
+.step-card p {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.free-tag {
+  background-color: #c6f7e9;
+  color: #007a7a;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+
+.no-pressure {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+.animate-up {
+  animation: fadeUp 0.8s ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.why-maps-bags {
+  padding: 60px 20px;
+  background-color: #e6f8f7;
+  text-align: center;
+  color: #004d61;
+}
+
+.why-maps-bags h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #007a7a;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 40px;
+  max-width: 700px;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.features-list li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border-left: 6px solid #6ed3cf;
+  box-shadow: 0 2px 5px rgba(0, 77, 97, 0.08);
+}
+
+.call-to-action {
+  background-color: #d4f5ef;
+  padding: 20px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  color: #004d61;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.call-to-action a {
+  color: #007a7a;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.crafted-hero {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.crafted-overlay {
+  background-color: rgba(0, 77, 97, 0.4); /* semi-transparent overlay */
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.crafted-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.crafted-overlay p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.crafted-hero {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;  /* Align to top-ish */
+  justify-content: center;
+  position: relative;
+  padding-top: 55px; /* Push content down from top */
+}
+
+.crafted-overlay {
+  text-align: center;
+  color: white;
+  /* background removed */
+}
+
+.crafted-overlay h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.crafted-overlay p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.whatsapp-btn, .instagram-btn {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.instagram-btn {
+  background-color: #E1306C; /* Instagram pink */
+}
+
+.whatsapp-btn:hover {
+  background-color: #1DA851;
+}
+
+.instagram-btn:hover {
+  background-color: #C42B60;
+}
+
+
