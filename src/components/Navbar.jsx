@@ -15,7 +15,7 @@ const Navbar = () => {
       >
         <img src={logo} alt="Maps and Bags Logo" />
         <div className="logo-text">
-          <span className="brand-name">Maps & Bags</span>
+          <span className="brand-name">Maps N Bags</span>
           <span className="brand-tagline">Our itinerary, your way</span>
         </div>
       </div>

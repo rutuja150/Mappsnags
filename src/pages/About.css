@@ -1,6 +1,6 @@
 /* ---------------- About Container ---------------- */
 .about-container {
-  font-family: 'Georgia', serif;
+  
   color: #2d2d2d;
   background-color: #fffaf6;
 }
@@ -201,4 +201,24 @@
   .testimonial-box {
     padding: 1.2rem;
   }
+}
+.vision-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.vision-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.vision-text {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
 }

@@ -23,6 +23,11 @@ const About = () => {
       Ties started by helping friends and family plan their getaway — and soon realized
       there was a growing need for thoughtful, customized travel planning that goes
       beyond generic packages.
+      Maps N Bags was born from a shared love for travel and storytelling between Sonali and Akash — two explorers who believe that meaningful travel can change the way we see the world, and ourselves. What began as a passion project soon took the shape of a purpose: to help others experience the same joy of discovering places beyond the ordinary.
+
+Over time, this evolved into a boutique travel design studio that doesn’t just plan trips — it curates deeply personal, thoughtfully paced journeys crafted entirely around you. From the kind of stays you love to the vibe you’re looking for, every detail is handpicked with care.
+
+With every itinerary they designed — whether for friends, family, or clients — one thing became clear: no two travelers are alike. That’s why at Maps N Bags, the heart of everything lies in one simple promise: <strong>We don’t offer packages — we offer thoughtfully designed journeys, tailored to your story.</strong>
     </p>
   </div>
 
@@ -33,24 +38,17 @@ const About = () => {
 </section>
 
 
-      {/* What Makes Us Different */}
-      <section className="difference-section">
-        <h3>WHAT MAKES US DIFFERENT</h3>
-        <div className="difference-cards">
-          <div className="card">
-            ✈️
-            <h4>HANDCRAFTED ITINERARIES</h4>
-          </div>
-          <div className="card">
-            🤝
-            <h4>PERSONAL SUPPORT, ALWAYS</h4>
-          </div>
-          <div className="card">
-            🧭
-            <h4>NO TEMPLATES, JUST TRAVEL THAT FEELS RIGHT</h4>
-          </div>
-        </div>
-      </section>
+      {/* Our Vision */}
+<section className="vision-section">
+  <h3>Our Vision</h3>
+  <p className="vision-text">
+    To redefine the way people travel — moving away from mass-produced itineraries and toward journeys that are personal, meaningful, and rooted in storytelling.
+  </p>
+  <p className="vision-text">
+    We believe travel is not about how many places you’ve been, but how deeply you’ve experienced them. At Maps N Bags, our vision is to create a space where every trip reflects the traveler — their rhythm, their preferences, and their idea of joy.
+  </p>
+</section>
+
 
       {/* Story + Testimonial Side-by-Side */}
       <section className="story-testimonial-section">
