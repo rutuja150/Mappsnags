@@ -377,4 +377,153 @@ body {
   background-color: #C42B60;
 }
 
+@media (max-width: 768px) {
+  .crafted-hero,
+  .packages-hero {
+    height: auto;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .crafted-overlay h1,
+  .packages-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .crafted-overlay p,
+  .packages-hero p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .step-card {
+    width: 100%;
+  }
+
+  .service-block,
+  .step {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .whatsapp-btn,
+  .instagram-btn {
+    width: 90%;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .crafted-overlay,
+  .packages-hero .overlay {
+    padding: 1.5rem;
+  }
+
+  .features-list {
+    font-size: 1rem;
+  }
+
+  .how-title,
+  .why-maps-bags h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .steps-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+  }
+
+  .step-card {
+    min-width: 270px;
+    flex: 0 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .steps-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0 10px 1rem 10px;
+  }
+
+  .step-card {
+    min-width: 260px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .steps-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+.steps-container {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 768px) {
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .step-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .step-card {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .steps-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .step-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
 

@@ -1,26 +1,28 @@
+/* ---------------- About Container ---------------- */
 .about-container {
   font-family: 'Georgia', serif;
   color: #2d2d2d;
   background-color: #fffaf6;
 }
 
-/* Top Full Width Banner Image */
+/* ---------------- Top Banner ---------------- */
 .top-banner img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Intro: Text Left, Image Right */
+/* ---------------- Intro Section ---------------- */
 .intro-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   padding: 3rem 2rem;
-  gap: 2rem;
+  gap: 2.5rem;
   max-width: 1200px;
   margin: auto;
+  background-color: #fff7f2;
 }
 
 .intro-text {
@@ -33,27 +35,41 @@
   font-size: 1.6rem;
   margin-bottom: 1rem;
   line-height: 1.5;
+  color: #2d2d2d;
 }
 
 .intro-text p {
   font-size: 1rem;
   line-height: 1.7;
+  color: #444;
 }
 
 .italic-quote {
   font-style: italic;
   color: #9e5c3f;
-  margin-top: 1rem;
+  font-size: 1.05rem;
+  text-align: center;
   font-weight: 500;
+  margin-top: 1rem;
+}
+
+.intro-img {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro-img img {
-  max-width: 280px;
-  border-radius: 8px;
+  max-width: 100%;
+  border-radius: 12px;
   object-fit: cover;
+  margin-bottom: 0.8rem;
 }
 
-/* What Makes Us Different Section */
+/* ---------------- Difference Section ---------------- */
 .difference-section {
   background-color: #f4f2ee;
   padding: 3rem 1rem;
@@ -86,7 +102,7 @@
   font-size: 1rem;
 }
 
-/* Story + Testimonial Side-by-Side */
+/* ---------------- Story + Testimonial ---------------- */
 .story-testimonial-section {
   display: flex;
   flex-wrap: wrap;
@@ -141,60 +157,48 @@
   text-align: right;
   margin-top: 1rem;
 }
+
 .testimonial-box .author span {
   font-style: italic;
   color: #9e5c3f;
 }
-.intro-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 3rem 2rem;
-  gap: 2.5rem;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #fff7f2;
-}
 
-.intro-text {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-}
+/* ---------------- Responsive Media Query ---------------- */
+@media (max-width: 768px) {
+  .intro-section,
+  .story-testimonial-section,
+  .difference-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.intro-text h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-  color: #2d2d2d;
-}
+  .intro-text,
+  .intro-img,
+  .story-box,
+  .testimonial-box {
+    max-width: 90%;
+    text-align: center;
+  }
 
-.intro-text p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #444;
-}
+  .intro-text h2 {
+    font-size: 1.4rem;
+  }
 
-.intro-img {
-  flex: 1;
-  min-width: 280px;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .intro-text p,
+  .story-text,
+  .testimonial-box p {
+    font-size: 0.95rem;
+  }
 
-.intro-img img {
-  max-width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  margin-bottom: 0.8rem;
-}
+  .card {
+    width: 90%;
+  }
 
-.italic-quote {
-  font-style: italic;
-  color: #9e5c3f;
-  font-size: 1.05rem;
-  text-align: center;
+  .difference-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-box {
+    padding: 1.2rem;
+  }
 }
