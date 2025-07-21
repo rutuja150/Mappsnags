@@ -100,7 +100,7 @@ export default function Home() {
         <div className="cards">
           <div className="card">
             <img src={trip1} alt="Vietnam" />
-            <h3>Rajan Dadkar</h3>
+            <h3>Rajan Darekar</h3>
             <p><i>“Wonderful experience with Maps N Bags! Every detail — from accommodation to food and local support — was perfectly managed. Would definitely recommend them!”</i></p>
           </div>
 

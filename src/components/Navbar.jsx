@@ -32,7 +32,7 @@ const Navbar = () => {
           <span className="nav-link">Contact</span>
           {isContactOpen && (
   <div className="dropdown-content">
-    <strong>Sonali Jaju</strong>
+    <strong>Sonali & Akash</strong>
     <a
       href="https://wa.me/918668819968?text=Hi%20Sonali%20Jaju%2C%20I%20am%20interested%20in%20planning%20a%20trip%20with%20Maps%20%26%20Bags!"
       target="_blank"
